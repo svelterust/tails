@@ -29,15 +29,24 @@
   </head>
 
   <body>
-      <div class="bg-slate-100">
-          <nav class="container mx-auto">
-            <ul>
-              <li><strong>Company</strong></li>
-            </ul>
-          </nav>
-      </div>
+    <div class="bg-slate-100">
+      <nav class="container">
+        <ul>
+          <li><%= link_to "Company", home_url, class: "text-slate-700 hover:text-slate-800 hover:no-underline font-bold" %></li>
+        </ul>
 
-    <main class="container mx-auto">
+        <ul>
+          <% if authenticated? %>
+            <li><%= link_to "Dashboard", dashboard_url %></li>
+          <% else %>
+            <li><%= link_to "Login", login_url %></li>
+            <li><%= link_to "Register", register_url %></li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="container">
       <%= yield %>
     </main>
   </body>

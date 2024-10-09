@@ -30,6 +30,9 @@ gem "turbo-rails", "~> 2.0"
 # Importmap
 gem "importmap-rails", "~> 2.0"
 
+# Password hashing
+gem "bcrypt", "~> 3.1"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -43,3 +46,5 @@ group :development, :test do
   # Live reload
   gem "rails_live_reload", "~> 0.3.6"
 end
+
+gem "rubocop-erb", "~> 0.5.4"

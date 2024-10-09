@@ -1,0 +1,15 @@
+<h1>Login</h1>
+
+<%= form_with url: login_url, data: { turbo: false } do |form| %>
+  <%= form.label :email_address, "Email" %>
+  <%= form.email_field :email_address, required: true, autofocus: true %>
+
+  <%= form.label :password, "Password" %>
+  <%= form.password_field :password, required: true %>
+
+  <% if alert = flash[:alert] %>
+    <small><%= alert %></small>
+  <% end %>
+
+  <%= form.submit "Login" %>
+<% end %>

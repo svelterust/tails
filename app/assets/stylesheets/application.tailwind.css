@@ -10,3 +10,7 @@
 :root {
     --pico-font-family-sans-serif: "IBM Plex Sans", sans-serif;
 }
+
+.container {
+    @apply max-w-screen-lg;
+}
