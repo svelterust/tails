@@ -1,24 +1,11 @@
-# README
+# tails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Minimal Rails template for creating MVP as fast as possible. PicoCSS for styling and TailwindCSS for layout (flex, grid, gap).
 
-Things you may want to cover:
+```bash
+bundle install
+./bin/dev     # terminal 1
+./bin/dev css # terminal 2
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+While developing, use `alt-b` to activate inspector. Make sure to change editor in `application.html.erb`.
