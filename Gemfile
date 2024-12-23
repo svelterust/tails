@@ -28,7 +28,7 @@ gem "thruster", require: false
 gem "turbo-rails", "~> 2.0"
 
 # Importmap
-gem "importmap-rails", "~> 2.0"
+gem "importmap-rails", "~> 2.1"
 
 # Password hashing
 gem "bcrypt", "~> 3.1"
